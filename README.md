@@ -2,6 +2,8 @@
 
 A responsive static landing page for the eGov Foundation, built with HTML, CSS, and Bootstrap. This project showcases the foundation's mission, impact, approach, products, and latest news, providing a clean and engaging user experience.
 
+**Live Demo:** [https://mujeebshk.github.io/TailWebs-HTML/](https://mujeebshk.github.io/TailWebs-HTML/)
+
 ## Features
 
 - **Responsive Design:** Optimized for various screen sizes using Bootstrap 5, ensuring a consistent experience across desktops, tablets, and mobile devices.
@@ -31,11 +33,11 @@ A responsive static landing page for the eGov Foundation, built with HTML, CSS, 
 
 ## Code Flow and Structure
 
-### `egov-landing.html`
+### `index.html`
 
 This is the main HTML file that defines the structure and content of the landing page.
 
-- **Head Section:** Links to external resources like Google Fonts, Bootstrap CSS, Font Awesome, and the local `styles.css` file. It also sets up meta tags for responsiveness and character encoding.
+- **Head Section:** Links to external resources like Google Fonts, Bootstrap CSS, Font Awesome, and the local `styles.css` file.
 - **Header (`.site-header`):** Contains a top bar for events, contact, and language selection, followed by the main navigation bar (`#mainNavbar`). The navbar is a Bootstrap component, made sticky (`fixed-top`) and responsive with a toggler for mobile views.
 - **Main Content (`<main>`):** Divided into several `<section>` elements, each representing a distinct part of the landing page (e.g., `hero-section`, `impact-hero`, `approach-section`, `news-section`). Each section has a unique `id` which is used for navigation and scroll-spy functionality.
 - **Footer (`.site-footer`):** Includes useful links, social media icons, a newsletter subscription form, and copyright information.
@@ -92,12 +94,8 @@ This YAML file defines the CI/CD pipeline for deploying the static site to GitHu
 
 1.  **Clone the repository:**
     ```bash
-    git clone https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git
-    cd YOUR_REPO_NAME
+    git clone https://github.com/mujeebshk/TailWebs-HTML.git
+    cd TailWebs-HTML
     ```
-2.  **Open `egov-landing.html`** in your web browser to view the site locally.
+2.  **Open `index.html`** in your web browser to view the site locally.
 3.  **Deployment:** The site is automatically deployed to GitHub Pages via GitHub Actions upon pushes to the `main` branch. Ensure GitHub Pages is enabled in your repository settings, pointing to the `gh-pages` branch or GitHub Actions.
-
----
-
-**Note:** For optimal GitHub Pages deployment, it is recommended to rename `egov-landing.html` to `index.html` so it serves as the default page at the root URL.
